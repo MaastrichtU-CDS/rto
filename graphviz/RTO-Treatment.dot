@@ -41,7 +41,7 @@ edge [fontname="Helvetica,Arial,sans-serif"]
     //line 0
     subgraph cluster0 {style="invis"
 		node [style="invis", shape="point", fixedsize="true", width=0, height=0]l0c0;
-	    node [label=" life cycle \n stage \n (UBERON) ", style="filled, rounded", shape="parallelogram", fixedsize=true, width=2, height=1, fillcolor="lightblue2"]l0c1;
+	    node [label=" planned \n process (OBI) ", style="filled, rounded", shape="parallelogram", fixedsize=true, width=2, height=1, fillcolor="lightblue2"]l0c1;
 		node [style="invis", shape="point", fixedsize="true", width=0, height=0]l0c2;
 	    node [label=" planned \n process (OBI) ", style="filled, rounded", shape="parallelogram", fixedsize=true, width=2, height=1, fillcolor="lightblue2"]l0c3;
 		node [label=" information \n content \n entity (IAO) ", fillcolor="grey90"]l0c4;
@@ -110,7 +110,7 @@ edge [fontname="Helvetica,Arial,sans-serif"]
  	//line 4
  	subgraph cluster4 {style="invis" 
 		node [style="invis", shape="point", fixedsize="true", width=0, height=0]l4c0;    
-		node [style="invis", shape="point", fixedsize="true", width=0, height=0]l4c1;    
+		node [label=" health \n care \n process (OGMS) ", fillcolor="lightblue2", style="filled, rounded", shape="parallelogram", fixedsize=true, width=2, height=1]l4c1;
 		node [style="invis", shape="point", fixedsize="true", width=0, height=0]l4c2;    
 		node [style="invis", shape="point", fixedsize="true", width=0, height=0]l4c3;
 		node [style="invis", shape="point", fixedsize="true", width=0, height=0]l4c4;    
@@ -126,13 +126,13 @@ edge [fontname="Helvetica,Arial,sans-serif"]
  	
  	//line 5
     subgraph cluster5 {style="invis" 
-		node [label=" Homo Sapiens \n (NCBITaxon) ", fillcolor="darkseagreen1", style="filled, rounded", shape="parallelogram", fixedsize=true, width=2, height=1]l5c0;    
-		node [label=" neonate \n stage \n (UBERON) ", fillcolor="lightblue2"]l5c1;
+		node [label=" Homo Sapiens \n (NCBITaxon) ", fillcolor="darkseagreen1", style="filled, rounded", shape="parallelogram", fixedsize=true, width=2, height=1]l5c0;
+		node [label=" radiation \n therapy \n treatment (RTO) ", fillcolor="lightblue2"]l5c1;
 		node [style="invis", shape="point", fixedsize="true", width=0, height=0]l5c2;
 		node [label=" time \n measurement \n assay (TBD)", fillcolor="lightblue2", style="filled, rounded", shape="parallelogram", fixedsize=true, width=2, height=1]l5c3;
 		node [label=" time  \n measurement \n datum (IAO)", style="filled, rounded", shape="parallelogram", fillcolor="grey90", fixedsize=true, width=2, height=1]l5c4;
 		node [label=" time value \n specification \n (GENEPIO)", style="filled, rounded", shape="parallelogram", fillcolor="grey90", fixedsize=true, width=2, height=1]l5c5;
-		node [label=" day \n (UO) ", style="filled, rounded", shape="parallelogram", fillcolor="grey90", fixedsize=true, width=2, height=1]l5c6;
+		node [label=" minute \n (UO) ", style="filled, rounded", shape="parallelogram", fillcolor="grey90", fixedsize=true, width=2, height=1]l5c6;
 		l5c0 -> l5c1 [style="invis"]
 		l5c1 -> l5c2 [style="invis"]
 		l5c2 -> l5c3 [style="invis"]
@@ -144,24 +144,24 @@ edge [fontname="Helvetica,Arial,sans-serif"]
 
     //line 6 (Abox)
   	subgraph cluster6 {style="filled" label="" bgcolor="grey95"
-		node [style="filled, rounded, dashed", shape="parallelogram", fillcolor="darkseagreen1", fixedsize=true, width=2, height=1, label="◆ Andre", fontcolor="darkred"]l6c0;    
-		node [fillcolor="lightblue2", label=" ◆ Andre's \n neonate stage "]l6c1;
-		node [fillcolor="lightblue2", label=" ◆ Andre's \n birth "]l6c2;
-		node [fillcolor="lightblue2", label=" ◆ Midwife \n looking \n at watch "]l6c3;
-		node [fillcolor="grey90", label=" ◆ Andre's birth \n date time "]l6c4;
-		node [fillcolor="grey90", label=" ◆ Andre's birth \n date time \n specification "]l6c5;
+		node [style="filled, rounded, dashed", shape="parallelogram", fillcolor="darkseagreen1", fixedsize=true, width=2, height=1, label="◆ Patient", fontcolor="darkred"]l6c0;    
+		node [fillcolor="lightblue2", label=" ◆ Patient \n RT treatment "]l6c1;
+		node [fillcolor="lightblue2", label=" ◆ Patient \n entering \n room "]l6c2;
+		node [fillcolor="lightblue2", label=" ◆ RTT \n noting \n start time "]l6c3;
+		node [fillcolor="grey90", label=" ◆ Patient start  \n date time "]l6c4;
+		node [fillcolor="grey90", label=" ◆ Patient start \n date time \n specification "]l6c5;
 #		node [style="invis", shape="point", fixedsize="true", width=0, height=0]l6c6;
-        node [style="filled, solid", fillcolor="white", fixedsize=true, width=2.5, height=1, label="\''1974-06-20\''\n ^^xsd:date", fontcolor="black"]l6c6;
-		node [label="◆ day", style="filled, rounded, dashed", shape="parallelogram", fillcolor="grey90", fixedsize=true, width=2, height=1, fontcolor="darkred"]l6c7;
+        node [style="filled, solid", fillcolor="white", fixedsize=true, width=3, height=1, label="\''2024-07-28T11:55:00\''\n ^^xsd:datetime", fontcolor="black"]l6c6;
+		node [label="◆ minute", style="filled, rounded, dashed", shape="parallelogram", fillcolor="grey90", fixedsize=true, width=2, height=1, fontcolor="darkred"]l6c7;
 		l6c0 -> l6c1 [dir="back", label=<<i><b>occurs in</b></i>>, fontcolor="dodgerblue3", color="dodgerblue3", penwidth=2]
 #		l6c0 -> l6c1 [dir="back", label=<<i><b>has<br/>specified<br/>input</b></i>>, fontcolor="dodgerblue3", color="dodgerblue3", penwidth=2]
-		l6c1 -> l6c2 [label=<<i><b>starts with</b></i>>, fontcolor="dodgerblue3", color="dodgerblue3", penwidth=2]
+		l6c1 -> l6c2 [dir="back",label=<<i><b>starts</b></i>>, fontcolor="dodgerblue3", color="dodgerblue3", penwidth=2]
 		l6c1 -> l6c3 [label=<<i><b>has part</b></i>>, fontcolor="dodgerblue3", color="dodgerblue3", penwidth=2]
 		l6c3 -> l6c4 [label=<<i><b>has<br/>specified<br/>output</b></i>>, fontcolor="dodgerblue3", color="dodgerblue3", penwidth=2]
-		l6c2 -> l6c4 [dir="back",label=<<i><b>is about</b></i>>, fontcolor="dodgerblue3", color="dodgerblue3", penwidth=2]
-		l6c4 -> l6c5 [label=<<i><b>has value<br/>specification</b></i>>, fontcolor="dodgerblue3", color="dodgerblue3", penwidth=2]
+		l6c4 -> l6c5 [dir="back",label=<<i><b>specifies<br/>value of</b></i>>, fontcolor="dodgerblue3", color="dodgerblue3", penwidth=2]
 		l6c5 -> l6c6 [label=<<i><b>has specified<br/>value</b></i>>, fontcolor="dodgerblue3", color="dodgerblue3", penwidth=2]
 		l6c5 -> l6c7 [label=<<i><b>has<br/>measurement<br/>unit label</b></i>>, fontcolor="dodgerblue3", color="dodgerblue3", penwidth=2]
+		l6c2 -> l6c4 [dir="back",label=<<i><b>is about</b></i>>, fontcolor="dodgerblue3", color="dodgerblue3", penwidth=2]
 	}
  	
  	
@@ -189,8 +189,8 @@ edge [fontname="Helvetica,Arial,sans-serif"]
     l1c1 -> l2c1 [arrowhead="none", constraint="false", style="solid", color="dodgerblue3", penwidth=4]
     l2c1 -> l3c1 [constraint="false", arrowhead="none", style="solid", color="dodgerblue3", penwidth=4]
     l3c1 -> l4c1 [constraint="false", arrowhead="none", style="solid", color="dodgerblue3", penwidth=4]
-    l4c1 -> l5c1 [constraint="false", arrowhead="none", style="solid", color="dodgerblue3", penwidth=4]
-    l5c1 -> l6c1 [dir="back",constraint="false", style="dotted", color="dodgerblue3", penwidth=4]
+    l4c1 -> l5c1 [dir="back", constraint="false", style="solid", color="dodgerblue3", penwidth=4]
+    l5c1 -> l6c1 [dir="back", constraint="false", style="dotted", color="dodgerblue3", penwidth=4]
 
     //column 2 
     l00c2 -> l0c2 [dir="back", constraint="false", style="dotted", color="dodgerblue3", penwidth=4]

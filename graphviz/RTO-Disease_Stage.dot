@@ -1,0 +1,302 @@
+digraph OBI_Mass_Measurement { bgcolor="white" label="" fontcolor="black" rankdir="LR"
+fontname="Helvetica,Arial,sans-serif"
+node [fontname="Helvetica,Arial,sans-serif"]
+edge [fontname="Helvetica,Arial,sans-serif"]
+
+    { rank=same;
+        line00 [style="invis", shape="point", fixedsize="true", width=0, height=0.5];
+        line0 [style="invis", shape="point", fixedsize="true", width=0, height=0.5];
+        line1 [style="invis", shape="point", fixedsize="true", width=0, height=0.5];
+        line2 [style="invis", shape="point", fixedsize="true", width=0, height=0.5];        
+        line3 [style="invis", shape="point", fixedsize="true", width=0, height=0.5];
+        line4 [style="invis", shape="point", fixedsize="true", width=0, height=0.5];
+        line5 [style="invis", shape="point", fixedsize="true", width=0, height=0.5];
+        line6 [style="invis", shape="point", fixedsize="true", width=0, height=0.5];
+        line00 -> line0 [style="invis"] 
+        line0 -> line1 [style="invis"] 
+        line1 -> line2 [style="invis"] 
+        line2 -> line3 [style="invis"] 
+        line3 -> line4 [style="invis"] 
+        line4 -> line5 [style="invis"] 
+        line5 -> line6 [style="invis"]
+    }
+
+    //line 00
+    subgraph cluster0 {style="invis"
+		node [label="independent \n continuant \n (BFO)", style="filled, rounded", shape="box", fixedsize=true, width=2, height=1, fillcolor="white"]l00c0;
+	    node [label="process \n (BFO)", style="filled, rounded", shape="box", fixedsize=true, width=2, height=1, fillcolor="white"]l00c1;
+		node [label="specifically \n dependent \n continuant \n (BFO)", style="filled, rounded", shape="box", fixedsize=true, width=2, height=1, fillcolor="white"]l00c2;
+	    node [label="process \n (BFO)", style="filled, rounded", shape="box", fixedsize=true, width=2, height=1, fillcolor="white"]l00c3;
+		node [label="generically \n dependent \n continuant \n (BFO)" style="filled, rounded", shape="box", fixedsize=true, width=2, height=1, fillcolor="white"]l00c4;
+		node [label="generically \n dependent \n continuant \n (BFO)" style="filled, rounded", shape="box", fixedsize=true, width=2, height=1, fillcolor="white"]l00c5;
+		node [label="generically \n dependent \n continuant \n (BFO)" style="filled, rounded", shape="box", fixedsize=true, width=2, height=1, fillcolor="white"]l00c6;
+		node [label="specifically \n dependent \n continuant \n (BFO)", style="filled, rounded", shape="box", fixedsize=true, width=2, height=1, fillcolor="white"]l00c7;
+		node [label="generically \n dependent \n continuant \n (BFO)", style="filled, rounded", shape="box", fixedsize=true, width=2, height=1, fillcolor="white"]l00c8;
+	    l00c0->l00c1 [style="invis"]
+	    l00c1->l00c2 [style="invis"]
+	    l00c2->l00c3 [style="invis"]
+	    l00c3->l00c4 [style="invis"]
+	    l00c4->l00c5 [style="invis"]
+	    l00c5->l00c6 [style="invis"]
+	    l00c6->l00c7 [style="invis"]
+	    l00c7->l00c8 [style="invis"]
+    }
+    
+    //line 0
+    subgraph cluster0 {style="invis"
+		node [label="material \n entity (BFO)", style="filled, rounded" shape="parallelogram", fillcolor="darkseagreen1", fixedsize=true width=2, height=1]l0c0;
+	    node [style="invis", shape="point", fixedsize="true", width=0, height=0]l0c1;
+		node [label="realizable  \n entity (BFO)", style="filled, rounded" shape="parallelogram", fillcolor="grey90", fixedsize=true width=2, height=1]l0c2;
+	    node [label="planned \n process (OBI)", style="filled, rounded", shape="parallelogram", fixedsize=true, width=2, height=1, fillcolor="lightblue2"]l0c3;
+		node [label="information \n content \n entity (IAO)", style="filled, rounded", shape="parallelogram", fixedsize=true, width=2, height=1, fillcolor="grey90"]l0c4;
+		node [label="information \n content \n entity (IAO)", style="filled, rounded", shape="parallelogram", fixedsize=true, width=2, height=1, fillcolor="grey90"]l0c5;
+		node [label="information \n content \n entity (IAO)", style="filled, rounded", shape="parallelogram", fixedsize=true, width=2, height=1, fillcolor="grey90"]l0c6;
+		node [label="realizable  \n entity (BFO)", style="filled, rounded" shape="parallelogram", fillcolor="grey90", fixedsize=true width=2, height=1]l0c7;
+		node [label="information \n content \n entity (IAO)", style="filled, rounded", shape="parallelogram", fixedsize=true, width=2, height=1, fillcolor="grey90"]l0c8;
+	    l0c0->l0c1 [style="invis"]
+	    l0c1->l0c2 [style="invis"]
+	    l0c2->l0c3 [style="invis"]
+	    l0c3->l0c4 [style="invis"]
+	    l0c4->l0c5 [style="invis"]
+	    l0c5->l0c6 [style="invis"]
+	    l0c6->l0c7 [style="invis"]
+	    l0c7->l0c8 [style="invis"]
+    }
+	
+
+ 	//line 1
+	subgraph cluster1 {style="invis"
+		node [label="material \n anatomical entity \n (UBERON)", fillcolor="darkseagreen1", style="filled, rounded" shape="parallelogram", fixedsize="true", width=2, height=1]l1c0;
+		node [style="invis", shape="point", fixedsize="true", width=0, height=0]l1c1;
+		node [label="disposition \n (BFO)", fillcolor="grey90", style="filled, rounded" shape="parallelogram", fixedsize="true", width=2, height=1]l1c2;
+		node [label="assay (OBI)", fillcolor="lightblue2", style="filled, rounded" shape="parallelogram", fixedsize="true", width=2, height=1]l1c3;
+	    node [label="data \n item (IAO)", fillcolor="grey90", style="filled, rounded" shape="parallelogram", fixedsize="true", width=2, height=1]l1c4;
+	    node [label="value \n specificaton \n (OBI)", fillcolor="grey90", style="filled, rounded" shape="parallelogram", fixedsize="true", width=2, height=1]l1c5;
+	    node [label="value \n specificaton \n (OBI)", fillcolor="grey90", style="filled, rounded" shape="parallelogram", fixedsize="true", width=2, height=1]l1c6;
+		node [style="invis", shape="point", fixedsize="true", width=0, height=0]l1c7;
+	    node [label="directive \n information \n content entity \n (IAO)", fillcolor="grey90", style="filled, rounded" shape="parallelogram", fixedsize="true", width=2, height=1]l1c8;
+		l1c0 -> l1c1 [style="invis"]
+		l1c1 -> l1c2 [style="invis"]
+		l1c2 -> l1c3 [style="invis"]
+		l1c3 -> l1c4 [style="invis"]
+		l1c4 -> l1c5 [style="invis"]
+		l1c5 -> l1c6 [style="invis"]
+		l1c6 -> l1c7 [style="invis"]
+		l1c7 -> l1c8 [style="invis"]
+	}
+	
+ 	//line 2
+    subgraph cluster2 {style="invis"
+		node [label="Organism (COB)", style="filled, rounded", shape="parallelogram", fillcolor="darkseagreen1", fixedsize=true, width=2, height=1]l2c0;
+		node [style="invis", shape="point", fixedsize="true", width=0, height=0]l2c1;
+		node [label="disease \n (DO)", style="filled, rounded", shape="parallelogram", fillcolor="grey90", fixedsize=true, width=2, height=1]l2c2;
+		node [style="invis", shape="point", fixedsize="true", width=0, height=0]l2c3;
+		node [label="measurement \n datum (IAO)", fillcolor="grey90", style="filled, rounded", shape="parallelogram", fixedsize="true", width=2, height=1]l2c4;
+	    node [label="categorical value \n specification \n (OBI)", fillcolor="grey90", style="filled, rounded" shape="parallelogram", fixedsize="true", width=2, height=1]l2c5;
+	    node [label="categorical value \n specification \n (OBI)", fillcolor="grey90", style="filled, rounded" shape="parallelogram", fixedsize="true", width=2, height=1]l2c6;
+		node [style="invis", shape="point", fixedsize="true", width=0, height=0]l2c7;
+	    node [label="plan \n specification \n (IAO)", fillcolor="grey90", style="filled, rounded" shape="parallelogram", fixedsize="true", width=2, height=1]l2c8;
+		l2c0 -> l2c1 [style="invis"]
+		l2c1 -> l2c2 [style="invis"]
+		l2c2 -> l2c3 [style="invis"]
+		l2c3 -> l2c4 [style="invis"]
+		l2c4 -> l2c5 [style="invis"]
+		l2c5 -> l2c6 [style="invis"]
+		l2c6 -> l2c7 [style="invis"]
+		l2c7 -> l2c8 [style="invis"]
+	}
+
+ 	//line 3
+    subgraph cluster3 {style="invis" 
+		node [style="invis", shape="point", fixedsize="true", width=0, height=0]l3c0;    
+		node [style="invis", shape="point", fixedsize="true", width=0, height=0]l3c1;
+		node [label="cancer \n (DO)", style="filled, rounded", shape="parallelogram", fillcolor="grey90", fixedsize=true, width=2, height=1]l3c2;
+		node [style="invis", shape="point" fixedsize="true", width=0 height=0]l3c3;
+	    node [style="invis", shape="point" fixedsize="true", width=0 height=0]l3c4;
+	    node [label="Generic \n TNM Finding \n (NCIT)", fillcolor="grey90", style="filled, rounded", shape="parallelogram", fixedsize="true", width=2, height=1]l3c5;
+	    node [label="Clinical \n TNM Finding \n (NCIT)", fillcolor="grey90", style="filled, rounded", shape="parallelogram", fixedsize="true", width=2, height=1]l3c6;
+	    node [style="invis", shape="point" fixedsize="true", width=0 height=0]l3c7;
+	    node [label="AJCC Cancer \n Staging Manual \n (NCIT)", fillcolor="grey90", style="filled, rounded", shape="parallelogram", fixedsize="true", width=2, height=1]l3c8;
+		l3c0 -> l3c1 [style="invis"]
+		l3c1 -> l3c2 [style="invis"]
+		l3c2 -> l3c3 [style="invis"]#[label=<<i><b>has value<br/>specification</b></i>>, arrowhead="none", fontcolor="dodgerblue3", color="dodgerblue3", penwidth=2]
+		l3c3 -> l3c4 [style="invis"]#[label="", fontcolor="dodgerblue3", color="dodgerblue3", penwidth=2]
+		l3c4 -> l3c5 [style="invis"]#[label=<<i><b>has<br/>measurement<br/>unit label</b></i>>, arrowhead="none", fontcolor="dodgerblue3", color="dodgerblue3", penwidth=2]
+		l3c5 -> l3c6 [style="invis"]#[label="", fontcolor="dodgerblue3", color="dodgerblue3", penwidth=2]
+		l3c6 -> l3c7 [style="invis"]
+		l3c7 -> l3c8 [style="invis"]
+	}
+ 	
+ 	//line 4
+ 	subgraph cluster4 {style="invis" 
+		node [style="invis", shape="point", fixedsize="true", width=0, height=0]l4c0;    
+		node [style="invis", shape="point", fixedsize="true", width=0, height=0]l4c1;    
+		node [label="invis", shape="point", fixedsize="true", width=0, height=0]l4c2;    
+		node [label="invis", shape="point", fixedsize="true", width=0, height=0]l4c3;
+		node [style="invis", shape="point", fixedsize="true", width=0, height=0]l4c4;    
+	    node [label="Generic Primary \n Tumor TNM \n  Finding (NCIT)", fillcolor="grey90", style="filled, rounded", shape="parallelogram", fixedsize="true", width=2, height=1]l4c5;
+		node [style="invis", shape="point", fixedsize="true", width=0, height=0]l4c6;    
+		node [style="invis", shape="point", fixedsize="true", width=0, height=0]l4c7;    
+		node [style="invis", shape="point", fixedsize="true", width=0, height=0]l4c7;    
+		l4c0 -> l4c1 [style="invis"]
+		l4c1 -> l4c2 [style="invis"]
+		l4c2 -> l4c3 [style="invis"]
+		l4c3 -> l4c4 [style="invis"]
+		l4c4 -> l4c5 [style="invis"]
+		l4c5 -> l4c6 [style="invis"]
+		l4c6 -> l4c7 [style="invis"]
+		l4c7 -> l4c8 [style="invis"]
+ 	} 	
+ 	
+ 	//line 5
+    subgraph cluster5 {style="invis" 
+		node [label="Homo Sapiens \n (NCBITaxon)", style="filled, rounded", shape="parallelogram", fillcolor="darkseagreen1", fixedsize=true, width=2, height=1]l5c0;    
+		node [label="disease \n course (OGMS)", style="filled, rounded", shape="parallelogram", fixedsize=true, width=2, height=1, fillcolor="lightblue2"]l5c1;
+		node [label="prostate \n cancer \n (DO)", fillcolor="grey90"]l5c2;
+		node [label="Staging \n (NCIT)", fillcolor="lightblue2", style="filled, rounded", shape="parallelogram", fixedsize=true, width=2, height=1]l5c3;    
+		node [label="categorical \n measurement \n datum (OBI)", fillcolor="grey90", style="filled, rounded", shape="parallelogram", fixedsize="true", width=2, height=1]l5c4;
+		node [label="T1a \n TNM Finding \n (NCIT)", fillcolor="grey90", style="filled, rounded", shape="parallelogram", fixedsize=true, width=2, height=1]l5c5;
+		node [label="Clinical Primary \n Tumor TNM \n Finding (NCIT)", fillcolor="grey90", style="filled, rounded", shape="parallelogram", fixedsize="true", width=2, height=1]l5c6;
+		node [label="plan (OBI)", fillcolor="grey90", style="filled, rounded", shape="parallelogram", fixedsize=true, width=2, height=1]l5c7;
+		node [label="AJCC Cancer \n Staging Manual \n 8th Edition \n (NCIT)", fillcolor="grey90", style="filled, rounded", shape="parallelogram", fixedsize=true, width=2, height=1]l5c8;
+		l5c0 -> l5c1 [style="invis"]
+		l5c1 -> l5c2 [style="invis"]
+		l5c2 -> l5c3 [style="invis"]#[label=<<i><b>has value<br/>specification</b></i>>, arrowhead="none", fontcolor="dodgerblue3", color="dodgerblue3", penwidth=2]
+		l5c3 -> l5c4 [style="invis"]#[label="", fontcolor="dodgerblue3", color="dodgerblue3", penwidth=2]
+		l5c4 -> l5c5 [style="invis"]# [label=<<i><b>has<br/>measurement<br/>unit label</b></i>>, fontcolor="dodgerblue3", color="dodgerblue3", arrowhead="none", penwidth=2]
+		l5c5 -> l5c6 [style="invis"]# [label="", fontcolor="dodgerblue3", color="dodgerblue3", penwidth=2]
+		l5c6 -> l5c7 [style="invis"]		
+		l5c7 -> l5c8 [style="invis"]		
+ 	}
+
+    //line 6 (Abox)
+  	subgraph cluster6 {style="filled" label="" bgcolor="grey95"
+		node [style="filled, rounded, dashed", shape="parallelogram", fillcolor="darkseagreen1", fixedsize=true, width=2, height=1, label="◆ John", fontcolor="darkred"]l6c0;    
+		node [fillcolor="lightblue2", label=" ◆ John's \n prostate cancer \n disease course"]l6c1;
+		node [fillcolor="grey90", label=" ◆ John's \n prostate cancer"]l6c2;
+		node [style="invis", shape="point", fixedsize="true", width=0, height=0]l6c3;
+		node [fillcolor="lightblue2", label=" ◆ John's \n cancer staging \n process", style="filled, rounded, dashed", shape="parallelogram",fixedsize=true, width=2, height=1, fontcolor="darkred"]l6c4;
+		node [label="◆ John's \n T stage \n in EHR", style="filled, rounded, dashed", shape="parallelogram", fillcolor="grey90", fixedsize=true, width=2, height=1, fontcolor="darkred"]l6c5;
+		node [label="◆ John's \n T1a stage", style="filled, rounded, dashed", shape="parallelogram", fillcolor="grey90", fixedsize=true, width=2, height=1, fontcolor="darkred"]l6c6;
+		node [style="invis", shape="point", fixedsize="true", width=0, height=0]l6c7;
+		node [label="◆ John's \n Staging Process \n Plan", style="filled, rounded, dashed", shape="parallelogram", fillcolor="grey90", fixedsize=true, width=2, height=1, fontcolor="darkred"]l6c8;
+		node [label="◆ John's \n Staging Process \n AJCC Edition", style="filled, rounded, dashed", shape="parallelogram", fillcolor="grey90", fixedsize=true, width=2, height=1, fontcolor="darkred"]l6c9;
+		l6c0 -> l6c1 [dir="back", label=<<i><b>occurs in</b></i>>, fontcolor="dodgerblue3", color="dodgerblue3", penwidth=2]
+		l6c1 -> l6c2 [label=<<i><b>realizes</b></i>>, fontcolor="dodgerblue3", color="dodgerblue3", penwidth=2]
+		#l6c1 -> l6c3 [dir="back", label=<<i><b>participates in</b></i>>, fontcolor="dodgerblue3", color="dodgerblue3", penwidth=2]
+		#l6c4 -> l6c5 [label=<<i><b>has<br/>quality</b></i>>, fontcolor="dodgerblue3", color="dodgerblue3", penwidth=2]
+		l6c2 -> l6c4 [dir="back", label=<<i><b>has specified<br/>input</b></i>>, fontcolor="dodgerblue3", color="dodgerblue3", penwidth=2]
+		#l6c5 -> l6c8 [dir="back", label=<<i><b>is quality<br/>measurement of</b></i>>, fontcolor="dodgerblue3", color="dodgerblue3", arrowhead="none", penwidth=2]
+		l6c0 -> l6c2 [label=<<i><b>has characteristic</b></i>>, fontcolor="dodgerblue3", color="dodgerblue3", penwidth=2]
+		l6c4 -> l6c5 [label=<<i><b>has specified<br/>output</b></i>>, fontcolor="dodgerblue3", color="dodgerblue3", penwidth=2]
+		l6c5 -> l6c6 [label=<<i><b>has value<br/>specification</b></i>>, fontcolor="dodgerblue3", color="dodgerblue3", penwidth=2]
+		l6c4 -> l6c7 [label="", arrowhead="none", fontcolor="dodgerblue3", color="dodgerblue3", penwidth=2]
+		l6c7 -> l6c8 [label=<<i><b>realizes</b></i>>, fontcolor="dodgerblue3", color="dodgerblue3", penwidth=2]
+		l6c8 -> l6c9 [label=<<i><b>concretizes</b></i>>, fontcolor="dodgerblue3", color="dodgerblue3", penwidth=2]
+		#l6c5 -> l6c9 [dir="back", label=<<i><b>specifies<br/>value of</b></i>>, fontcolor="dodgerblue3", color="dodgerblue3", arrowhead="none", penwidth=2]
+		#l6c3 -> l6c4 [label="", arrowhead="none", fontcolor="dodgerblue3", color="dodgerblue3", penwidth=2]
+		l6c5 -> l6c6 [style="invis"]
+		l6c6 -> l6c7 [style="invis"]
+		l6c7 -> l6c8 [style="invis"]
+		l6c8 -> l6c9 [style="invis"]
+	}
+ 	
+ 	
+    line00 -> l00c0 [style="invis"]
+    line0 -> l0c0 [style="invis"]
+    line1 -> l1c0 [style="invis"]
+    line2 -> l2c0 [style="invis"]
+    line3 -> l3c0 [style="invis"]
+    line4 -> l4c0 [style="invis"]
+    line5 -> l5c0 [style="invis"]
+    line6 -> l6c0 [style="invis"]
+
+    //column 0 (patient)
+    l00c0 -> l0c0 [dir="back",constraint="false", style="solid", color="dodgerblue3", penwidth=4]
+    l0c0 -> l1c0 [dir="back",constraint="false", style="solid", color="dodgerblue3", penwidth=4]
+    l1c0 -> l2c0 [dir="back",constraint="false", style="solid", color="dodgerblue3", penwidth=4]
+    l2c0 -> l3c0 [dir="back",constraint="false", style="dashed", color="dodgerblue3", penwidth=4]
+    l3c0 -> l4c0 [constraint="false", arrowhead="none", style="dashed", color="dodgerblue3", penwidth=4]
+    l4c0 -> l5c0 [constraint="false", arrowhead="none", style="dashed", color="dodgerblue3", penwidth=4]
+    l5c0 -> l6c0 [dir="back",constraint="false", style="dotted", color="dodgerblue3", penwidth=4]
+
+    //column 1 (disease course)
+    l00c1 -> l0c1 [dir="back",constraint="false", style="solid", color="dodgerblue3", penwidth=4]
+    l0c1 -> l1c1 [constraint="false", arrowhead="none", style="solid", color="dodgerblue3", penwidth=4]
+    l1c1 -> l2c1 [constraint="false", arrowhead="none", style="solid", color="dodgerblue3", penwidth=4]
+    l2c1 -> l3c1 [constraint="false", arrowhead="none", style="solid", color="dodgerblue3", penwidth=4]
+    l3c1 -> l4c1 [constraint="false", arrowhead="none", style="solid", color="dodgerblue3", penwidth=4]
+    l4c1 -> l5c1 [constraint="false", arrowhead="none", style="solid", color="dodgerblue3", penwidth=4]
+    l5c1 -> l6c1 [dir="back",constraint="false", style="dotted", color="dodgerblue3", penwidth=4]
+
+    //column 2 (cancer)
+    l00c2 -> l0c2 [dir="back",constraint="false", style="solid", color="dodgerblue3", penwidth=4]
+    l0c2 -> l1c2 [dir="back",constraint="false", style="solid", color="dodgerblue3", penwidth=4]
+    l1c2 -> l2c2 [dir="back",constraint="false", style="solid", color="dodgerblue3", penwidth=4]
+    l2c2 -> l3c2 [dir="back",constraint="false", style="solid", color="dodgerblue3", penwidth=4]
+    l3c2 -> l4c2 [dir="back",constraint="false", style="solid", color="dodgerblue3", penwidth=4]
+    l4c2 -> l5c2 [constraint="false", arrowhead="none", style="solid", color="dodgerblue3", penwidth=4]
+    l5c2 -> l6c2 [dir="back",constraint="false", style="dotted", color="dodgerblue3", penwidth=4]
+
+    //column 3 (staging proces)
+    l00c3 -> l0c3 [dir="back",constraint="false", style="solid", color="dodgerblue3", penwidth=4]
+	l0c3 -> l1c3 [dir="back",constraint="false", style="solid", color="dodgerblue3", penwidth=4]
+    l1c3 -> l2c3 [dir="back",constraint="false", style="solid", color="dodgerblue3", penwidth=4]
+    l2c3 -> l3c3 [arrowhead="none", style="solid", constraint="false", color="dodgerblue3", penwidth=4]
+    l3c3 -> l4c3 [arrowhead="none", style="solid", constraint="false", color="dodgerblue3", penwidth=4]
+    l4c3 -> l5c3 [arrowhead="none", style="solid", constraint="false", color="dodgerblue3", penwidth=4]
+    l5c3 -> l6c4 [dir="back",constraint="false", style="dotted", color="dodgerblue3", penwidth=4]
+	
+    //column 4 (categorical measurement datum)
+    l00c4 -> l0c4 [dir="back",constraint="false", style="solid", color="dodgerblue3", penwidth=4]
+    l0c4 -> l1c4 [dir="back",constraint="false", style="solid", color="dodgerblue3", penwidth=4]
+    l1c4 -> l2c4 [constraint="false", arrowhead="none", style="solid", color="dodgerblue3", penwidth=4]
+    l2c4 -> l3c4 [constraint="false", arrowhead="none", style="solid", color="dodgerblue3", penwidth=4]
+    l3c4 -> l4c4 [constraint="false", arrowhead="none", style="solid", color="dodgerblue3", penwidth=4]
+    l4c4 -> l5c4 [constraint="false", arrowhead="none", style="solid", color="dodgerblue3", penwidth=4]
+    l5c4 -> l6c5 [dir="back",constraint="false", style="dotted", color="dodgerblue3", penwidth=4]
+ 
+    //column 5 (Generic TNM finding)
+    l00c5 -> l0c5 [dir="back",constraint="false", style="solid", color="dodgerblue3", penwidth=4]
+	l0c5 -> l1c5 [dir="back",constraint="false", style="solid", color="dodgerblue3", penwidth=4]
+    l1c5 -> l2c5 [dir="back",constraint="false", style="solid", color="dodgerblue3", penwidth=4]
+    l2c5 -> l3c5 [arrowhead="none", style="solid", constraint="false", color="dodgerblue3", penwidth=4]
+    l3c5 -> l4c5 [arrowhead="none", style="solid", constraint="false", color="dodgerblue3", penwidth=4]
+    l4c5 -> l5c5 [arrowhead="none", style="solid", constraint="false", color="dodgerblue3", penwidth=4]
+    l5c5 -> l6c6 [dir="back",constraint="false", style="dotted", color="dodgerblue3", penwidth=4]
+
+    //column 6 (Clinical TNM finding)
+    l00c6 -> l0c6 [dir="back",constraint="false", style="solid", color="dodgerblue3", penwidth=4]
+    l0c6 -> l1c6 [dir="back",constraint="false", style="solid", color="dodgerblue3", penwidth=4]
+    l1c6 -> l2c6 [dir="back", constraint="false", style="solid", color="dodgerblue3", penwidth=4]
+    l2c6 -> l3c6 [dir="back", constraint="false", style="solid", color="dodgerblue3", penwidth=4]
+    l3c6 -> l4c6 [arrowhead="none", style="solid", constraint="false", color="dodgerblue3", penwidth=4]
+    l4c6 -> l5c6 [constraint="false", arrowhead="none", style="solid", color="dodgerblue3", penwidth=4]
+    l5c6 -> l6c6 [dir="back",constraint="false", style="dotted", color="dodgerblue3", penwidth=4]
+
+    //column 7 (plan)
+    l00c7 -> l0c7 [dir="back",constraint="false", style="solid", color="dodgerblue3", penwidth=4]
+    l0c7 -> l1c7 [dir="back",constraint="false", style="solid", color="dodgerblue3", penwidth=4]
+    l1c7 -> l2c7 [arrowhead="none", style="solid", constraint="false", color="dodgerblue3", penwidth=4]
+    l2c7 -> l3c7 [arrowhead="none", style="solid", constraint="false", color="dodgerblue3", penwidth=4]
+    l3c7 -> l4c7 [arrowhead="none", style="solid", constraint="false", color="dodgerblue3", penwidth=4]
+    l4c7 -> l5c7 [arrowhead="none", style="solid", constraint="false", color="dodgerblue3", penwidth=4]
+    l5c7 -> l6c8 [dir="back",constraint="false", style="dotted", color="dodgerblue3", penwidth=4]
+
+    //column 6 (staging manual)
+    l00c8 -> l0c8 [dir="back",constraint="false", style="solid", color="dodgerblue3", penwidth=4]
+    l0c8 -> l1c8 [dir="back",constraint="false", style="solid", color="dodgerblue3", penwidth=4]
+    l1c8 -> l2c8 [dir="back", constraint="false", style="solid", color="dodgerblue3", penwidth=4]
+    l2c8 -> l3c8 [dir="back", constraint="false", style="solid", color="dodgerblue3", penwidth=4]
+    l3c8 -> l4c8 [arrowhead="none", style="solid", constraint="false", color="dodgerblue3", penwidth=4]
+    l4c8 -> l5c8 [constraint="false", arrowhead="none", style="solid", color="dodgerblue3", penwidth=4]
+    l5c8 -> l6c9 [dir="back",constraint="false", style="dotted", color="dodgerblue3", penwidth=4]
+
+    //other relations   
+    #l1c0 -> l4c3 [constraint="false", label=<<i><b>has quality</b></i>>, fontcolor="dodgerblue3", color="dodgerblue3", penwidth=2]
+	#l3c4 -> l4c5 [constraint="false",label=<<i><b>has specified<br/>numeric value</b></i>>, fontcolor="dodgerblue3", color="dodgerblue3", penwidth=2]
+	#l4c3 -> l5c4 [dir="back", constraint="false",label=<<i><b>specifies<br/>value of</b></i>>, fontcolor="dodgerblue3", color="dodgerblue3", penwidth=2]
+	#l5c2 -> l4c3 [constraint="false",label=<<i><b>is quality<br/>measurement of</b></i>>, fontcolor="dodgerblue3", color="dodgerblue3", penwidth=2]
+	
+
+}
